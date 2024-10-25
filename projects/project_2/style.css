@@ -1,0 +1,73 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+       Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
+  }
+  
+body{
+    box-sizing: border-box !important;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+}
+#main{
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 1.5em;
+}
+/*title center*/
+#title, #sub-title{
+    text-align: center;
+}
+/*image rules*/
+#img-div{
+    background-color: white;
+   padding:2rem;
+}
+#image-caption{
+    text-align: center;
+    margin-top:0;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    
+}
+/*tribute alignment*/
+#tribute-info{
+    margin:auto;
+    width:50%;
+}
+#tribute-info h3{
+    text-align: center;
+}
+
+#tribute-info li{
+    font-size:2rem;
+    margin:0.25rem;
+    margin-left:0;
+    padding-left:0;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    font-size: 3rem;
+}
+/*medias*/
+@media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+      #img-caption {
+      font-size: 1.4rem;
+    }
+      h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+  }
+  
