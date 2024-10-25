@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+}
+.link-container{
+    margin-top: 10px;
+}
+.link-container .text{
+    background-color: #6E8898;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    width: 100%;
+    text-align: center;
+}
+.link-container :hover{
+    background-color: #6a7ca7;
+}
+a{
+    text-decoration: none !important;
+}
+.row{
+    width:100%;
+}
+.image img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.project a{
+    text-decoration: none;
+}
+
+
+/*ნავიგაცია*/
+nav ul li{
+    list-style: none;
+    margin-right:20px !important;
+    font-size: 2em;
+}
+nav ul li a{
+    text-decoration: none !important;
+    color:white;   
+}
+nav ul li a:hover{
+    color:white;   
+}
+nav ul li:hover{
+    background-color: #45567d;
+}
+nav ul{
+    float: right;
+    display: flex;
+    margin:0;
+}
+nav{
+    height: 3em;
+    background-color: #6E8898;
+}
+/*ებაუთი*/
+#about{
+    width: 100%;
+    background-color: #2E5266;
+    height:95vh;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    color:white;
+}
+#about p{
+    font-size: 2rem;
+}
+
+#contact h1 a{
+    font-weight: 400;
+    font-family: "Ubuntu" , "sans-serif";
+    color:white;
+    width: 100%;
+    font-weight: 700;
+    opacity: 1;
+
+}
+#contact {
+    margin-top:20px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    height:25vh;
+    width: 100%;
+    padding:2em;
+    text-align: center;
+    background-color:#2E5266;
+}
