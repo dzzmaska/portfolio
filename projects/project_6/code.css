@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.btn {
+    width: 100% !important;
+    height: auto;
+    bottom:0;
+    position:relative;
+    padding: 0.4rem;
+    height: auto;
+    width: 4rem;
+    background: rgb(0, 0, 0);
+    color: gold;
+    font-size: 1rem;
+}
+.btn:hover{
+    color:white;
+    background: blue;
+}
+.main-editor{
+    width:100%;
+    display: flex;
+}
+
+.first {
+  background-color: #ffffff;
+  white-space: pre;
+  border:2px solid black;
+  height:auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 50%;
+}
+
+.second {
+    background-color:white;
+    right: 0;
+    border:2px solid black;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 50%;
+}
+main{
+    display: flex;
+}
+#section-1{
+    width:33%;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 90vh;
+}
+#section-2{
+    width: 67%;
+    height: 90vh;
+}
