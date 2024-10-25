@@ -1,1 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 10px;
+        }
+        .float-left h1{
+            font-size:2rem;
+            padding: 0;
+            margin: 0;
+        }
+        .float-right{
+            font-size:1.7rem;
+        }
+        /*responsive NAVBAR*/
+        nav{
+            background-color: rgb(220, 255, 225);
+            position: fixed;
+            /*height unda vcvalot ro mere section-1 is margin gavakontrolot*/
+            height:50px;
+            width: 100%;
+            z-index: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+        }
+        .float-right{
+            display: flex;
+        }
+        @media (max-width: 650px){
+            /*სათაურის ფონტის ზომა და კიდე ერთ ხაზში რო ჩაჯდეს რა 3 ცალი რაღაცა*/
+            .float-right{
+                font-size:1.3rem;
+                display: inline;
+            }
+            /*ამით სიმაღლეს ვაკონტროლებთ*/
+            nav{
+                height: 6rem;
+            }
+            /*და მერე ქვემოდან რაღაცას ვამატებთ*/
+            main{
+            padding-top:8rem !important;
+            }
+            /*ეს მარჯინებით ვალამაზებთ რა დიდი არაფერი*/
+            .float-left h1{
+                margin-top:0.525rem;
+            }
+            .float-left{
+                font-size:1.3rem;
+                margin-top:1rem;
+            }
+        }
+        @media (max-width: 600px){
+            .float-right{
+                font-size:0.9rem;
+            }
+            .float-right{
+                font-size: 1.1rem;
+            }
+            nav{
+                display:block;
+                text-align: center;
+                height:7rem;
+            }
+            main{
+            padding-top:8rem !important;
+            }
+            .float-left{
+                margin-top:0.5rem;
+            }
+        }
+        /*NAVBAR STYLE ON LINKS*/
+        .float-right a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-left:0.3rem;
+        }
 
+        /*Section 1*/
+        /*centering */
+        main{
+            padding-top:4rem;
+        }
+        .section-1{
+            text-align: center;
+            margin:auto;
+            font-size: 0.8rem;
+        }
+        /*submit button*/
+        #submit{
+            font-size: 1.5rem;
+            background-color: #00C851;
+            border: none;
+            box-shadow:2px 2px rgb(0, 156, 26);
+            border-radius: 0.5rem;
+            color: white;
+            width: 12.5rem;
+            height:auto;
+        }
+        /*margin*/
+        #form input{
+            margin-top:1rem;
+        }
+        /*section-2*/
+        .section-2-child{
+            display: flex;
+            width:80%;
+            margin:auto;
+            font-size: 1rem;
+            padding-top:0.25rem;
+        }
+        .section-2-child i{
+            color:rgb(255, 60, 0);
+            font-size: 5rem;
+        }
+        .section-2-child-left{
+            margin-right:2rem;
+        }
+        /*media*/
+        @media (max-width: 600px){
+            .section-2-child{
+                display: block;
+                font-size:1rem;
+                margin-top:1rem;
+            }
+            .section-2-child i{
+                visibility: hidden;
+                position:absolute;
+            }
+        }
+        .section-4{
+            width: 80%;
+            margin:auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .section-4 .product{
+            text-align: center;
+            width:150px;
+            border:3px solid salmon;
+        }
+        .section-4 .product ol{
+            text-decoration: none;
+            list-style: none;
+        }
+        .section-4 .product h1{
+            background-color: slategrey;
+        }
+        .section-4 .product .btn{
+            font-size: 1rem;
+            width: auto;
+            background-color: rgb(255, 255, 36);
+            border:none;
+            box-shadow: 1px 1px rgb(180, 177, 0);
+        }
+        .section-6{
+            display: flex;
+            justify-content: space-evenly;
+            margin:1rem auto;
+        }
+        .section-6-child{
+            width: 25%;
+            border:1px solid black;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .section-6-child h2{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+        <nav id="navbar">
+            <div class="float-left">
+                <h1><i class="bi bi-truck"></i>Original trucks</h1>
+            </div>
+            <div class="float-right">
+                <a href="#">Features</a>
+                <a href="#">How it works</a>
+                <a href="#">Pricing</a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="section-1">
+                <form id="form" action="#.php">
+                    <h1>Handcrafted, home-made masterpieces</h1>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" !required><br>
+                    <input id="submit" type="submit" value="submit">
+                </form>
+            </div>
+
+            <div id="section-2" class="section-2">
+                <div class="section-2-child">
+                    <div class="section-2-child-left">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+                    <div class="section-2-child-right">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="section-2-child">
+                    <div class="section-2-child-left">
+                        <i class="bi bi-building"></i>
+                    </div>
+                    <div class="section-2-child-right">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="section-2-child">
+                    <div class="section-2-child-left">
+                        <i class="bi bi-calculator"></i>
+                    </div>
+                    <div class="section-2-child-right">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section-3">
+                <iframe style="display:block; margin:auto; margin-top:2rem;" width="320" height="240" src="https://www.youtube.com/embed/hK47WDakIGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!--
+            <div class="section-4">
+                <div class="product">
+                    <h1>Satauri</h1>
+                    <h2>$600</h2>
+                    <ol>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum dolor.</li>
+                      <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product">
+                    <h1>Satauri</h1>
+                    <h2>$600</h2>
+                    <ol>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum dolor.</li>
+                      <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product">
+                    <h1>Satauri</h1>
+                    <h2>$600</h2>
+                    <ol>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum dolor.</li>
+                      <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </div>
+            -->
+            <div class="section-6">      
+                <div class=" section-6-child">
+                      <h2>Heading</h2>
+                      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details</a></p>
+                  </div>
+
+                  <div class="section-6-child">
+                      <h2>Heading</h2>
+                      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details</a></p>
+                </div>
+                  <div class="section-6-child">
+                      <h2>Heading</h2>
+                      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details</a></p>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
