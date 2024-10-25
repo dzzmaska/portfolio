@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="geo">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1><strong>ოფისი <Form></Form></strong></h1>
+    </div>
 
+    <div class="page-form-1">
+        <form class="page-form">
+            <div class="page-form-child-1 page-form-child">
+                <label for="#input-1">სახელი:</label>
+                <input class="form-control" type="text" id="#input-1" placeholder="Enter your name" !required>
+            </div>
+            <div class="page-form-child-2 page-form-child">
+                <label for="#input-2">მეილი</label>
+                <input class="form-control" type="email" id="#input-2" placeholder="Enter your Email" !required>
+            </div>
+            <div class="page-form-child-3 page-form-child">
+                <label for="#input-3">ასაკი</label>
+                <input class="form-control" type="text" id="#input-3" placeholder="Enter your age">
+            </div>
+            <div class="page-form-child-4 page-form-child">
+                <label for="#input-4">რომელი აღგწერს</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Please Select</option>
+                    <option value="Begginer">Begginer</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                    <option value="preferNo">Prefer Not to say</option>
+                    <option value="other">Other</option>
+                  </select>
+            </div>
+            <div class="page-form-child-5 page-form-child">
+                <p>იმუშავებდი ჩვენი კომპანიისთვის</p>
+                <div class="labels">
+                    <label><input name="recommend" value="Definetly" type="radio" class="input-radio" checked>Definetly<label>
+                    <label><input name="recommend" value="Maybe" type="radio" class="input-radio">Maybe<label>
+                    <label><input name="recommend" value="not-sure" type="radio" class="input-radio">Not-sure<label>
+                </div>
+            </div>          
+            <div class="page-form-child-6 page-form-child ">
+                <p>რა პოზიციაზე იმუშავებდი?</p> 
+                <label><input type="checkbox" name="position" value="position"class=" input-checkbox">front<label>
+                <label><input type="checkbox" name="position" value="position" class="input-checkbox">back<label>
+                <label><input type="checkbox" name="position" value="position" class="input-checkbox">full stack<label>
+            </div>
+            <div class="page-form-child-6 page-form-child">
+                <p>რამეს ხოარ დაამატებდი?</p>
+                <textarea class="input-textarea" name="comments" id="comments"></textarea>
+            </div>
+            <div class="page-form-child-7 page-form-child">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
